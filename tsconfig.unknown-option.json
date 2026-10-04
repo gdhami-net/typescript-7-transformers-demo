@@ -1,0 +1,14 @@
+{
+  "//": "Same project, plus one compiler option that does not exist. It is here to prove that TypeScript 7 does validate tsconfig.json: this file is rejected with TS5023, while the plugins entry in tsconfig.json is accepted without a word.",
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "rootDir": "src",
+    "outDir": "out/unknown-option",
+    "plugins": [{ "transform": "./transformer.cjs" }],
+    "notARealCompilerOption": true
+  },
+  "include": ["src"]
+}

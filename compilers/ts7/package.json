@@ -1,0 +1,9 @@
+{
+  "name": "compiler-ts7",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TypeScript 7, the native compiler, installed on its own so both versions can build the same project.",
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

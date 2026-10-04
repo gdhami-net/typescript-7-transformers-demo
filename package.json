@@ -1,0 +1,14 @@
+{
+  "name": "typescript-7-transformers-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "One project, one tsconfig.json with a custom transformer, built by TypeScript 6 and by TypeScript 7. Both builds succeed; only one output is transformed.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "setup": "npm --prefix compilers/ts6 install && npm --prefix compilers/ts7 install",
+    "build:ts6": "node compilers/ts6/node_modules/typescript/bin/tsc -p tsconfig.json --outDir out/ts6",
+    "build:ts7": "node compilers/ts7/node_modules/typescript/bin/tsc -p tsconfig.json --outDir out/ts7",
+    "check": "node check.mjs"
+  }
+}
